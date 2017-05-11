@@ -1,0 +1,16 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#listaCategorie {
+	-fx-background-color: #f1f1f1;
+    -fx-color: #000;
+}
+
+a:hover {
+    -fx-background-color: #555;
+    -fx-color: white;
+}
+
+.active {
+    -fx-background-color: #4CAF50;
+    -fx-color: white;
+}

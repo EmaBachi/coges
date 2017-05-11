@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="342.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.consoft.coges.StoricoRettificheController">
+   <children>
+      <Button fx:id="bottoneCancellaStorico" layoutX="39.0" layoutY="92.0" mnemonicParsing="false" onAction="#doCancellaStorico" prefHeight="25.0" prefWidth="109.0" text="Cancella Storico" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="92.0" />
+      <Label layoutX="25.0" layoutY="34.0" text="Storico delle rettifiche" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabellaStorico" layoutX="200.0" layoutY="99.0" prefHeight="200.0" prefWidth="625.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="92.0">
+        <columns>
+          <TableColumn fx:id="colonnaDataRettifica" prefWidth="182.0" text="Data Rettifica" />
+          <TableColumn fx:id="colonnaCodiceConto" prefWidth="182.0" text="Codice Conto" />
+            <TableColumn fx:id="colonnaImporto" prefWidth="183.0" text="Importo" />
+        </columns>
+      </TableView>
+      <Button fx:id="bottoneModificaRettifica" layoutX="35.0" layoutY="130.0" mnemonicParsing="false" onAction="#doModificaSingolaRettifica" text="Modifica Rettifica" AnchorPane.leftAnchor="50.0" />
+      <Button fx:id="bottoneEliminaRettifica" layoutX="50.0" layoutY="167.0" mnemonicParsing="false" onAction="#doEliminaSingolaRettifica" prefHeight="25.0" prefWidth="109.0" text="Elimina Rettifica" AnchorPane.leftAnchor="50.0" />
+   </children>
+</AnchorPane>

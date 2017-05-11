@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane focusTraversable="true" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.consoft.coges.CogesController">
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableTotali" blendMode="DARKEN" focusTraversable="false" layoutX="185.0" layoutY="34.0" minWidth="400.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="40.0">
+              <columns>
+                <TableColumn fx:id="colonnaCodice" maxWidth="199.0" minWidth="-Infinity" prefWidth="63.0" text="Codice" />
+                <TableColumn fx:id="colonnaDescrizione" editable="false" maxWidth="199.0" minWidth="-1.0" prefWidth="63.0" text="Descrizione" />
+                  <TableColumn fx:id="colonnaGenerale" maxWidth="199.0" minWidth="-1.0" prefWidth="63.0" text="Contabilita Generale" />
+                  <TableColumn fx:id="colonnaRettificheGenerale" maxWidth="199.0" minWidth="-1.0" prefWidth="63.0" text="Rettifiche Generale" />
+                  <TableColumn fx:id="colonnaCoges" maxWidth="199.0" minWidth="-1.0" prefWidth="63.0" text="Contabilita Coges" />
+                  <TableColumn fx:id="colonnaRettifiche" maxWidth="199.0" minWidth="-1.0" prefWidth="63.0" text="Rettifiche" />
+                  <TableColumn fx:id="colonnaDelta" maxWidth="199.0" minWidth="-1.0" prefWidth="63.0" text="Delta" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="150.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="calendarioDataInizio" layoutX="30.0" layoutY="54.0" promptText="Data Inizio" AnchorPane.leftAnchor="50.0" />
+            <DatePicker fx:id="calendarioDataFine" layoutX="249.0" layoutY="54.0" promptText="Data Fine" AnchorPane.leftAnchor="250.0" />
+            <Button fx:id="bottoneControlla" layoutX="458.0" layoutY="54.0" mnemonicParsing="false" onAction="#doControlla" text="Controlla" AnchorPane.leftAnchor="450.0">
+               <tooltip>
+                  <Tooltip text="Premi per ricaricare o refresh" />
+               </tooltip></Button>
+            <Button fx:id="bottoneRettifiche" layoutX="604.0" layoutY="54.0" mnemonicParsing="false" onAction="#doRettifche" text="Rettifiche" AnchorPane.rightAnchor="180.0">
+               <tooltip>
+                  <Tooltip text="Premi per effettuare rettifiche" />
+               </tooltip></Button>
+            <Button fx:id="bottoneStoricoRettfiche" layoutX="692.0" layoutY="54.0" mnemonicParsing="false" onAction="#doStoricoRettifiche" text="Storico Rettifiche" AnchorPane.rightAnchor="50.0">
+               <tooltip>
+                  <Tooltip text="Premi per visualizzare lo storico e cancellarlo" />
+               </tooltip></Button>
+            <ComboBox fx:id="comboCategoria" layoutX="250.0" layoutY="104.0" prefWidth="150.0" AnchorPane.leftAnchor="250.0" />
+            <Label layoutX="59.0" layoutY="108.0" text="Seleziona una categoria" AnchorPane.leftAnchor="50.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <effect>
+      <Blend />
+   </effect>
+</BorderPane>

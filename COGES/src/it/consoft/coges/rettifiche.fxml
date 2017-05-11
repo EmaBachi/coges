@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.consoft.coges.RettificheController">
+   <children>
+      <TextField fx:id="textNumeroConto" layoutX="137.0" layoutY="69.0" />
+      <TextField fx:id="textImporto" layoutX="137.0" layoutY="107.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField editable="false" layoutX="14.0" layoutY="69.0" prefHeight="25.0" prefWidth="108.0" text="Numero Conto" />
+      <TextField editable="false" layoutX="14.0" layoutY="107.0" prefHeight="25.0" prefWidth="108.0" text="Importo" />
+      <Button fx:id="bottoneEffettuaRettifica" layoutX="47.0" layoutY="253.0" mnemonicParsing="false" onAction="#doEffettuaRettifica" text="Effettua Rettifica" />
+      <Button fx:id="bottoneCancella" layoutX="167.0" layoutY="253.0" mnemonicParsing="false" onAction="#doCancella" text="Cancella" />
+      <TextField layoutX="14.0" layoutY="150.0" prefHeight="25.0" prefWidth="108.0" text="Descrizione" />
+      <TextArea fx:id="textDescrizione" layoutX="137.0" layoutY="150.0" prefHeight="78.0" prefWidth="149.0" />
+      <Label layoutX="115.0" layoutY="25.0" text="Rettifica">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
