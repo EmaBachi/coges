@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class DBConnect {
 
-	private final String jdbcURL =  "jdbc:sqlserver://localhost;databaseName=CONSOFT_PROD_2009SP1;user=sa;password=Passw0rd;";
+	private final String jdbcURL =  "jdbc:sqlserver://BELMONTNEW:1666;databaseName=TIRESIA;user=tiresiaadm;password=admin$1994;";
 
 	public Connection getConnection(){
 		

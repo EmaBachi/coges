@@ -620,12 +620,12 @@ public class CogesController {
 	  
 			        XSSFWorkbook workbook = new XSSFWorkbook();
 			        XSSFSheet sheet = workbook.createSheet(comboCategoria.getValue().toString());
-			        File tryFile = new File("C:/Users/csto90/Desktop/tir/"+comboCategoria.getValue().toString()+".xlsx");
+			        File tryFile = new File("D:/81_TiresiaApp"+comboCategoria.getValue().toString()+".xlsx");
 			        File excelFile;
 			        
 			        if(tryFile.exists()) tryFile.delete();
 			        
-			        excelFile = new File("C:/Users/csto90/Desktop/tir/"+comboCategoria.getValue().toString()+".xlsx");
+			        excelFile = new File("D:/81_TiresiaApp/"+comboCategoria.getValue().toString()+".xlsx");
 			        excelFile.deleteOnExit();
 			        FileOutputStream excelOutputStream = new FileOutputStream(excelFile);
 			        

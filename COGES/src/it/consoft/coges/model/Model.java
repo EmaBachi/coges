@@ -33,7 +33,7 @@ public class Model {
 	private final int tipoRettificheCoges = 2;
 	private final int tipoContabilitaCoges = 3;
 	
-	private final String percorsoFileTesto = "C:/Users/csto90/Desktop/tir/logFile.txt";
+	private final String percorsoFileTesto = "D:/81_TiresiaApp/logFile.txt";
 	
 	private String societa;
 	
