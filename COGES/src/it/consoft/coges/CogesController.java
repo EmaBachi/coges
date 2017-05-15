@@ -12,7 +12,6 @@ import java.util.TreeMap;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -41,10 +40,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
-import javafx.scene.input.MouseEvent;
 import javafx.util.Callback;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
@@ -174,7 +171,7 @@ public class CogesController {
 	    private TextField testoCopia;
 	    
 	    @FXML
-	    private ImageView bottoneEsportaInExcel;
+	    private Button bottoneEsportaInExcel;
 	    
 	    @FXML
 	    private ComboBox<String> comboCompany;
@@ -615,7 +612,7 @@ public class CogesController {
 		}
 		
 		@FXML
-	    void doEsportaInExcel(MouseEvent event) {
+	    void doEsportaInExcel(ActionEvent event) {
 			try {
 	  
 			        XSSFWorkbook workbook = new XSSFWorkbook();
